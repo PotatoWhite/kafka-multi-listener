@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.type.mapping: Test01:me.potato.kafkamultilistener.models.Test01, Test02:me.potato.kafkamultilistener.models.Test02
+#    consumer:
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
